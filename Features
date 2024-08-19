@@ -1,24 +1,21 @@
-Kill Switch = {
+KillSwitch = {
     ["Enabled"] = true, -- dtcs updates, then shuts down script
     ["Protection"] = true, --    
     ["AntiAimViewer"] = false, -- built in everything
 },
-
-{
 Intro = {
     ["IntroBlur"] = true,
 },
-
 WaterMark = {
     ["Enabled"] = false,
 },
-
 Settings = {
+    ["UseGui"] = false,
     ["FoVSettings"] = "Sticky",
     ["UseMisc"] = false,
-    ["Keybinds"] = "KeyHold" -- Hold, Toggle
+    ["Keybinds"] = "KeyHold", -- Hold, Toggle
     ["UseResolverAlways"] = false, -- resolver always on
-    ["Streamable"] = true, -- Stremable module
+    ["Streamable"] = true, -- Streamable module
 },
 
 Silent = {
@@ -27,10 +24,10 @@ Silent = {
     ["Prediction"] = 0.12,
     ["Keybind"] = "P",
     ["WallCheck"] = true,
-    ["Visualize"] =
+    ["Visualize"] = false,
     ["CheckIfKoed"] = false,
     ["Snaplines"] = false,
-    ["Mode"] = "Legit", --// or blatant
+    ["Mode"] = "Legit", -- or blatant
     ["AirPart"] = "Head",
     ["UseAirPart"] = false,
     ["UseCustomPrediction"] = true, 
@@ -40,12 +37,12 @@ Silent = {
     ["UseChecks"] = false,
     ["HitLocation"] = false,
     ["UseHitLocation"] = false,
-
     ["Resolver"] = true,
-    ["ResolverTuning"]  = 0.3
-    ["ResolverMode"] = "Recalculate"  -- MoveDirection
+    ["ResolverTuning"]  = 0.3,
+    ["ResolverMode"] = "Recalculate",  -- MoveDirection
     ["ResolverX"] = false,
     ["ResolverY"] = false,
+},
 
 FieldOfView = {
     ["FOV"] = true,
@@ -64,9 +61,9 @@ FieldOfView = {
     ["UseSticky"] = false,
     ["DotSize"] = 2,
     ["Radius"] = 150,
-    ["Color"] = Color3.fromRGB(255, 255, 255)
-    },
+    ["Color"] = Color3.fromRGB(255, 255, 255),
 },
+
 Camlock = {
     ["KeyBind"] = "C",
     ["Prediction"] = 0.123,
@@ -76,38 +73,21 @@ Camlock = {
     ["SmoothingValue"] = 0.1,
     ["Shake"] = 0, 
     ["Offset"] = -2.50,
-    ["AirCheck"] = false
+    ["AirCheck"] = false,
     ["TraceLegit"] = false,
     ["UseCircleRadius"] = false,
     ["UnlockOnTargetDeath"] = false,
     ["UnlockOnOwnDeath"] = false,
     ["UseRadius"] = false,
-    ["Air Smoothing"] = 0.1,
-    ["Air Prediction"] = 0.123,
-    ["Head Prediction"] = false,
+    ["AirSmoothing"] = 0.1,
+    ["AirPrediction"] = 0.123,
+    ["HeadPrediction"] = false,
     ["Snapline"] = false,
-
     ["Resolver"] = true,
-    ["ResolverTuning"]  = 0.3
-    ["ResolverMode"] = "Recalculate"  -- MoveDirection
+    ["ResolverTuning"]  = 0.3,
+    ["ResolverMode"] = "Recalculate",  -- MoveDirection
     ["ResolverX"] = false,
     ["ResolverY"] = false,
-},
-FieldOfView = {
-    ["FOV"] = false,
-    ["Raduis"] = 100,
-    ["UseFOV"] = false,
-    ["FovThickness"] = 2,
-    ["FovTransparency"] = 0.7,
-    ["FovColor"] = Color3.fromRGB(255, 255, 255),
-    ["Filled"] = false,
-    ["FillTransparency"] = 0.9,
-    ["Dotted"] = false,
-    ["ShowDots"] = false,
-    ["Rainbow"] = false,
-    ["DotSize"] = 2,
-    ["Radius"] = 150,
-    ["Color"] = Color3.fromRGB(255, 255, 255)
 },
 
 TargetAim = {
@@ -118,8 +98,8 @@ TargetAim = {
     ["PredY"] = 0.1,
     ["Parts"] = "Head", 
     ["JumpPrediction"] = -2.50,
-    ["CheckIfJumped"] = false
-    ["Resolver Tuning"] = 0.2,
+    ["CheckIfJumped"] = false,
+    ["ResolverTuning"] = 0.2,
     ["Smoothing"] = 0.10,
     ["Dot"] = true, 
     ["DotSize"] = UDim2.new(1,1,1,1), 
@@ -137,22 +117,21 @@ TargetAim = {
     ["HighlightFillColor"] = Color3.fromRGB(0, 0, 255),
     ["HighlightOutlineColor"] = Color3.fromRGB(0, 0, 255),
     ["Spectate"] = false,
-
     ["Resolver"] = true,
-    ["ResolverTuning"]  = 0.3
-    ["ResolverMode"] = "Recalculate"  -- MoveDirection
+    ["ResolverTuning"]  = 0.3,
+    ["ResolverMode"] = "Recalculate",  -- MoveDirection
     ["ResolverX"] = false,
     ["ResolverY"] = false,
+},
 
 FoV = { -- TargetAim FoV
     ["FoV"] = false,
     ["UseFoV"] = false,
     ["FoVRadius"] = 50,
-    ["FoVColor"] Color3.fromRGB(0, 0, 255),
+    ["FoVColor"] = Color3.fromRGB(0, 0, 255),
     ["FoVDotted"] = false,
     ["FoVDottedRainbow"] = false,
 },
-
 
 Rage = {
     ["KeyBind"] = "C",
@@ -161,20 +140,16 @@ Rage = {
     ["TargetStafe"] = false,
     ["Spectate"] = false,
     ["LookAt"] = false,
-        
     ["SpeedT"] = 10, -- speed
     ["StrafeT"] = 10,
     ["StrafeH"] = 10,
     ["StrafeR"] = 10,
-    
     ["Resolver"] = true,
-    ["ResolverTuning"]  = 0.3
-    ["ResolverMode"] = "Recalculate"  -- MoveDirection
+    ["ResolverTuning"]  = 0.3,
+    ["ResolverMode"] = "Recalculate",  -- MoveDirection
     ["ResolverX"] = false,
     ["ResolverY"] = false,
-    }, 
 },
-
 
 CheckBoth = {
     ["DisableOnTargetDeath"] = true,
@@ -188,26 +163,24 @@ CheckBoth = {
     ["FFA"] = false, -- free for all
 },
 
-
 Visualize = {
-        ["ShowBonePart"] = false,
-        ["BonePartRadius"] = 8,
-        ["BonePartThickness"] = 2,
-        ["BonePartColor"] = Color3.fromRGB(255, 0, 0),
-        ["BonePartTransparency"] = 1,
-        ["BonePart"] = false,
-        ["Visualize Box"] = false,
-        ["Tracer"] = false,
-    },
+    ["ShowBonePart"] = false,
+    ["BonePartRadius"] = 8,
+    ["BonePartThickness"] = 2,
+    ["BonePartColor"] = Color3.fromRGB(255, 0, 0),
+    ["BonePartTransparency"] = 1,
+    ["BonePart"] = false,
+    ["VisualizeBox"] = false,
+    ["Tracer"] = false,
+},
 
 Memory = {
     ["MemorySpoofer"] = true,
     ["Start"] = 1137,
     ["End"] = 1564,
-    ["Legit"] = "Mode" -- mode "blatant" "legit"
+    ["Legit"] = "Mode", -- mode "blatant" "legit"
     ["UseMemory"] = false,
 },
-
 
 Key360 = {
     ["Enabled"] = true,
@@ -216,7 +189,6 @@ Key360 = {
     ["UseMath"] = false,
     ["Speed"] = 2500,
     ["X2"] = 2,
-
 },
 
 Esp = {
@@ -230,18 +202,15 @@ Esp = {
     ["KillChecks"] = false,
 },
 
-
 Cframe = {
     ["Enabled"] = false,
     ["Speed"] = 2,
-    ["KeyBind"] "X",
-    ["MultiSpeed"] = false, -- dont use
+    ["KeyBind"] = "X",
+    ["MultiSpeed"] = false, 
 },
 
 AntiAim = {
     ["Enabled"] = false,
     ["Desync"] = false,
     ["UseLegit"] = false, -- legit antiaim
-
-    },
 },
